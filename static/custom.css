@@ -1,0 +1,36 @@
+body {
+  background-color: #bfbfbf;
+}
+
+.wide {
+  width: 100%;
+}
+
+.jumbotron {
+  background-image: url("http://img03.deviantart.net/4d7a/i/2010/332/7/d/old_ass_version_by_sharpwriter-d33u385.png");
+  background-size: cover;
+  width: 100%;
+  text-shadow: #444 0 4px 4px;
+}
+
+.jumbotron a {
+  color: white;
+  text-decoration: none;
+}
+
+.row h2 {
+  color: #111a28;
+  text-shadow: #444 0 4px 4px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+

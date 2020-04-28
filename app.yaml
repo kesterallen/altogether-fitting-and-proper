@@ -1,15 +1,14 @@
-application: altogether-fitting-and-proper
-version: 2
-runtime: python27
-api_version: 1
-threadsafe: yes
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  python_version: 3
 
 handlers:
+- url: /static
+  static_dir: static
+- url: /img
+  static_dir: static/img
 - url: .*
   script: main.app
-
-libraries:
-- name: jinja2
-  version: "2.6"
-- name: markupsafe
-  version: "0.15"
